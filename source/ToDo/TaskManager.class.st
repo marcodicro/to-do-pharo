@@ -22,3 +22,9 @@ TaskManager >> initialize [
 TaskManager >> startManaging: aTask [ 
 	tasks add: aTask
 ]
+
+{ #category : #updating }
+TaskManager >> updateTask: aTask with: anUpdatedTask [ 
+	tasks remove: aTask.
+	tasks add: anUpdatedTask.
+]

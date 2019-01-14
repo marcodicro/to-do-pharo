@@ -29,3 +29,21 @@ TaskManagerTest >> testAddingNewTask [
 	self assert: tasks size equals: 1.
 	self assert: tasks first equals: orderFoodTask
 ]
+
+{ #category : #tests }
+TaskManagerTest >> testChangeTask [
+
+	| orderFoodTask orderBurgerTask tasks |
+
+	orderFoodTask := Task
+		titled: 'Order Food'
+		about: 'Order food at 11:30'.
+	taskManager startManaging: orderFoodTask.
+	orderBurgerTask := Task
+		titled: 'Order Burger'
+		about: 'Order burger at 11:30'.
+	taskManager updateTask: orderFoodTask with: orderBurgerTask.
+	tasks := taskManager allTasks.
+	self assert: tasks size equals: 1.
+	self assert: tasks first equals: orderBurgerTask
+]
