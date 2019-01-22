@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfToDo,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfToDo
+	#category : #BaselineOftodopharo
 }
 
 { #category : #baselines }
