@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'todopharo',
+      #baseline : 'ToDo',
       #directory : 'source',
       #load : [ 'Development' ],
       #platforms : [  #pharo ]
@@ -9,7 +9,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-       #packages : [ 'to-do-pharo*' ]
+       #packages : [ 'ToDo*' ]
     }
   }
 }
