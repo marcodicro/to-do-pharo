@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfToDo,
+	#name : #BaselineOftodopharo,
 	#superclass : #BaselineOf,
 	#category : #BaselineOftodopharo
 }
 
 { #category : #baselines }
-BaselineOfToDo >> baseline: spec [
+BaselineOftodopharo >> baseline: spec [
   <baseline>
   spec
     for: #common
